@@ -1,0 +1,66 @@
+.item {
+  border-radius: 20%;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  position: relative;
+  will-change: transform;
+  overflow: hidden;
+  background-image: linear-gradient(
+    15deg,
+    rgb(255, 179, 37),
+    rgb(255, 126, 20)
+  );
+  box-shadow: 0 2px 3px 0 hsla(0, 0%, 0%, 0.07),
+    0 10px 15px 0 hsla(0, 0%, 0%, 0.05);
+  text-align: center;
+  font-size: 25px;
+  color: #555;
+}
+
+.item-1 {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+}
+
+.item-2 {
+  width: 105px;
+  height: 105px;
+  line-height: 95px;
+}
+
+.item-3 {
+  width: 95px;
+  height: 130px;
+  line-height: 105px;
+}
+
+.item-4 {
+  width: 105px;
+  height: 65px;
+  line-height: 65px;
+}
+
+.controls {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  .control {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  height: 65vh;
+}
